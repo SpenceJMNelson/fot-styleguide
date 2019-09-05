@@ -169,7 +169,7 @@ line-height: 64px;
     text-transform: uppercase;
    }
    h3{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
    }
    h4{
@@ -331,6 +331,7 @@ font-family: 'Source Code Pro', monospace;
     padding:2em;
     margin-bottom:2em;
    }
+
 
    .text-block h5{
     display: block;
@@ -721,15 +722,13 @@ cursor: pointer;
 }
 
 .accessibility-subsection > div {
-  padding:2em;
+  padding:0 2em;
 }
 
-.accessibility-subsection span {
-font-size: 36px;
+.accessibility-subsection h3 {
 letter-spacing: 0;
 font-weight: bold;
 max-width:10em;
-display: block;
 }
 
 .accessibility-darkbg {
@@ -738,6 +737,10 @@ display: block;
 }
 
 #illustration {
+  padding-bottom:0;
+}
+
+#intro {
   padding-bottom:0;
 }
 
@@ -755,6 +758,11 @@ display: block;
    font-size: 30px;
    letter-spacing: 1.2px;
    text-transform: uppercase;
+  }
+
+  h3{
+   font-size: 20px;
+   font-weight: 400;
   }
 
   .columns{
@@ -833,6 +841,10 @@ display: block;
   .intro-text {
     font-size:32px;
     line-height: 1.2;
+  }
+
+  .text-block .columns {
+    display:none;
   }
 }
 
