@@ -1,4 +1,5 @@
-$('.tilt-illustration').tilt({
-    perspective:2000,
-    maxTilt:2000
+$( document ).ready(function() {
+  $( ".main-nav" ).click(function() {
+    $( this ).toggleClass( "open" );
+  });
 });

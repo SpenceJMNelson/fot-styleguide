@@ -101,6 +101,10 @@ textarea {
      scroll-behavior: smooth;
    }
 
+   html * {
+     box-sizing: border-box;
+   }
+
    body {
     font-family: 'Source Sans Pro', sans-serif;
     color:#08222D;
@@ -202,7 +206,8 @@ nav {
 nav a{
   display: inline-block;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 a.button {
@@ -226,7 +231,7 @@ nav .navhome {
 
 .navlinks li{
   float:left;
-  margin:0 2em;
+  margin:0 1em;
 }
 
 nav .navlink{
@@ -410,7 +415,7 @@ font-family: 'Source Code Pro', monospace;
      padding:4em 2em 2em 2em;
      position:relative;
      font-family: 'Source Code Pro', monospace;
-     width: 18%;
+     width: 25%;
       flex-grow: 1;
       flex-basis: auto;
       margin: 1em;
@@ -735,7 +740,85 @@ display: block;
   padding-bottom:0;
 }
 
+@media only screen and (max-width: 600px) {
+  .columns{
+   display: block;
+  }
+  .main-nav {
+    width:4em;
+    height:4em;
+    display: block;
+    overflow: hidden;
+    padding:1em;
+    transition:300ms;
+    box-sizing: border-box;
+  }
 
+  .main-nav.open {
+    width:100%;
+    height:100%;
+  }
+
+  .navlinks{
+    margin:0;
+    padding:0;
+  }
+
+  .navlinks li{
+    float:none;
+    display: block;
+    margin:0;
+    opacity:0;
+    transition: 300ms;
+  }
+
+  .navlinks li:nth-child(1){
+    transition-delay: 200ms;
+  }
+  .navlinks li:nth-child(2){
+    transition-delay: 300ms;
+  }
+  .navlinks li:nth-child(3){
+    transition-delay: 400ms;
+  }
+  .navlinks li:nth-child(4){
+    transition-delay: 500ms;
+  }
+  .navlinks li:nth-child(5){
+    transition-delay: 600ms;
+  }
+  .navlinks li:nth-child(6){
+    transition-delay: 700ms;
+  }
+
+  .navlinks li a{
+    padding:1em;
+  }
+
+  .main-nav.open .navlinks li{
+    opacity:1;
+  }
+
+  .navdownload {
+    display: inline-block;
+    opacity:0;
+    transition-delay: 700ms!important;
+    transition: 300ms;
+  }
+
+  .main-nav.open .navdownload {
+    opacity:1;
+  }
+
+  .colorblock {
+    width: auto;
+  }
+
+  .intro-text {
+    font-size:32px;
+    line-height: 1.2;
+  }
+}
 
 
 /* ==========================================================================
